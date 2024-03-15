@@ -1,0 +1,159 @@
+:root {
+  font-family: 'Basis Grotesque Pro', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #c1becc;
+}
+
+.divider .line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #bec5cc;
+}
+
+.divider .text {
+  position: absolute;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1.2px solid #d3d8dc;
+  border-radius: 5px;
+  width: 192px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button-icon {
+  margin-right: 8px;
+}
+
+.button-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .divider {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px 14px;
+  width: 400px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-password:focus {
+  outline: none;
+}
+
+@media (max-width: 340px) {
+  .button {
+    width: 100%;
+  }
+
+  .column {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: calc(100% - 24px); /* Adjust input width for smaller screens */
+  }
+}
