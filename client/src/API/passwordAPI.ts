@@ -3,7 +3,7 @@ import { axios } from './axios.tsx'
 export const resetPassword = async ({ email }: { email: string }): Promise<void> => {
   await axios.post('/v1/auth/password-reset', {
     email: email,
-    redirect_url: import.meta.env.VITE_REDIRECT_URL
+    redirect_url: window.location.host + '/create-new-password'
   })
 }
 
